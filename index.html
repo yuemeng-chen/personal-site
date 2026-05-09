@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Nicole Chen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-layout">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a href="index.html" class="site-name">Yuemeng Nicole Chen<br>粤萌</a>
+        <nav class="nav-links">
+          <a href="artifacts.html">Artifacts</a>
+        </nav>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-links">
+          <a href="https://linkedin.com/in/yuemengchen" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/yuemengchen" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:yuemengchen@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero">
+        <h1>Things I'm making, noticing, and becoming.</h1>
+      </section>
+
+      <section class="section about-content">
+        <p>I'm Nicole, a data scientist based in New York.</p>
+
+        <p>I spend a lot of my day thinking about systems, patterns, and decisions. Outside of work, I've been making small internet things out of whatever I can't stop thinking about — old messages, emotional experiences, museums, cities, self-control, and the strange little ways technology keeps pieces of our lives.</p>
+
+        <p>This site is part portfolio, part notebook, part evidence that I'm still becoming a person who makes things.</p>
+
+        <div class="thinking-about">
+          <h3>I'm usually thinking about</h3>
+          <ul>
+            <li>
+              <span class="thinking-label">Art, museums, and experiences that stay with me</span>
+              <span class="thinking-detail">Museo Soumaya in Mexico City. Rothko rooms. Anything that makes a room feel like it's holding its breath.</span>
+            </li>
+            <li>
+              <span class="thinking-label">Places and timelines</span>
+              <span class="thinking-detail">Mexico City, Tokyo, Istanbul. The way a city can feel like a version of yourself you haven't met yet.</span>
+            </li>
+            <li>
+              <span class="thinking-label">Dashboards, decisions, and behavior</span>
+              <span class="thinking-detail">The gap between what data says and what people actually do.</span>
+            </li>
+            <li>
+              <span class="thinking-label">How to build a life that feels bigger than work</span>
+            </li>
+            <li>
+              <span class="thinking-label">Colonialism, cultural memory, and who gets preserved</span>
+              <span class="thinking-detail">Reading: <em>Orientalism</em> by Edward Said. Who decides what gets remembered.</span>
+            </li>
+            <li>
+              <span class="thinking-label">Yoshitomo Nara</span>
+              <span class="thinking-detail">The angry girls, the soft rebellion. Art that looks simple but holds something heavy.</span>
+            </li>
+            <li>
+              <span class="thinking-label">Cats</span>
+              <span class="thinking-detail">Always cats.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="mobile-footer">
+        <div class="sidebar-links">
+          <a href="https://linkedin.com/in/yuemengchen" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/yuemengchen" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:yuemengchen@gmail.com">Email</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    document.querySelectorAll('.thinking-label').forEach(function(label) {
+      label.addEventListener('click', function(e) {
+        var detail = this.nextElementSibling;
+        if (!detail || !detail.classList.contains('thinking-detail')) return;
+        var wasVisible = detail.classList.contains('visible');
+        document.querySelectorAll('.thinking-detail.visible').forEach(function(d) {
+          d.classList.remove('visible');
+        });
+        if (!wasVisible) detail.classList.add('visible');
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.thinking-about li')) {
+        document.querySelectorAll('.thinking-detail.visible').forEach(function(d) {
+          d.classList.remove('visible');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
