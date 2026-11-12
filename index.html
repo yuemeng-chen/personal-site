@@ -3,104 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome - Nicole Chen</title>
+  <meta name="description" content="Projects, experiments and small internet things by Yuemeng Nicole Chen.">
+  <title>Projects — Yuemeng Nicole Chen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page-layout">
     <aside class="sidebar">
       <div class="sidebar-top">
-        <a href="index.html" class="site-name">Yuemeng Nicole Chen<br>粤萌</a>
-        <nav class="nav-links">
-          <a href="artifacts.html">Artifacts</a>
+        <a href="index.html" class="site-name">Yuemeng Nicole Chen<br><span lang="zh">粤萌</span></a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="index.html" class="active" aria-current="page">Projects</a>
+          <a href="about.html">About</a>
         </nav>
       </div>
       <div class="sidebar-bottom">
         <div class="sidebar-links">
-          <a href="https://linkedin.com/in/yuemengchen" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/yuemengchen" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/cyuemeng/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/yuemengchen" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="mailto:yuemengchen@gmail.com">Email</a>
         </div>
       </div>
     </aside>
 
-    <main class="main-content">
-      <section class="hero">
-        <h1>Things I'm making, noticing, and becoming.</h1>
+    <main class="main-content projects-content">
+      <header class="hero project-hero">
+        <p class="eyebrow">A small collection of internet things</p>
+        <h1>Things I've made.</h1>
+        <p class="hero-intro">Some are jokes. Some are attempts to make sense of things. A surprising number are about dating, memory, and what we do with our feelings online.</p>
+      </header>
+
+      <section class="projects-list" aria-label="Selected projects">
+        <article class="featured-project">
+          <div class="project-art art-burn" aria-hidden="true">
+            <span class="art-kicker">THE GIRLS' BURN BOOK</span>
+            <span class="burn-title">Should I<br>Date This<br>Man?</span>
+            <span class="art-sticker">for the girls ♡</span>
+          </div>
+          <div class="project-copy">
+            <div class="project-meta"><span>01 / Silly Hack NYC</span><span>2026</span></div>
+            <h2><a href="https://shouldidatethisman.com" target="_blank" rel="noopener noreferrer">Should I Date This Man? <span aria-hidden="true">↗</span></a></h2>
+            <p>My friend and I had heard one too many dating horror stories. At Silly Hack NYC, we turned them into a website to help the girls out — part dating advice, part <em>Mean Girls</em> burn book, and very much a safe space to talk shit.</p>
+            <p class="project-aside">It won $111. Which feels like exactly the right amount of prize money for this idea.</p>
+          </div>
+        </article>
+
+        <article class="featured-project">
+          <div class="project-art art-rip" aria-hidden="true">
+            <span class="art-kicker">HERE LIES THE CHAT HISTORY</span>
+            <span class="rip-symbol">✳</span>
+            <span class="rip-title">rest in<br>pieces.</span>
+            <span class="art-foot">delete · burn · repeat</span>
+          </div>
+          <div class="project-copy">
+            <div class="project-meta"><span>02 / Digital afterlife</span><span>2026</span></div>
+            <h2><a href="https://restinpieces.rip/" target="_blank" rel="noopener noreferrer">RIP Graveyard <span aria-hidden="true">↗</span></a></h2>
+            <p>The data scientist in me initially wanted to analyze the messages from my last relationship: texting frequencies, NLP, all of it. Then I realized I didn't need another analysis of something that was already over.</p>
+            <p class="project-aside">So I made a graveyard instead. A place to burn the messages, again and again, because it's over. For real this time.</p>
+          </div>
+        </article>
+
+        <article class="featured-project">
+          <div class="project-art art-heart" aria-hidden="true">
+            <span class="art-kicker">A SMALL TYPOGRAPHY EXPERIMENT</span>
+            <span class="heart-symbol">爱</span>
+            <span class="art-foot">what changes shape, what stays</span>
+          </div>
+          <div class="project-copy">
+            <div class="project-meta"><span>03 / Interactive experiment</span><span>2026</span></div>
+            <h2><a href="https://heart.restinpieces.rip/" target="_blank" rel="noopener noreferrer">Heart 爱 <span aria-hidden="true">↗</span></a></h2>
+            <p>A little interactive typography experiment about the way emotional wounds change the shape of a heart.</p>
+          </div>
+        </article>
       </section>
 
-      <section class="section about-content">
-        <p>I'm Nicole, a data scientist based in New York.</p>
-
-        <p>I spend a lot of my day thinking about systems, patterns, and decisions. Outside of work, I've been making small internet things out of whatever I can't stop thinking about — old messages, emotional experiences, museums, cities, self-control, and the strange little ways technology keeps pieces of our lives.</p>
-
-        <p>This site is part portfolio, part notebook, part evidence that I'm still becoming a person who makes things.</p>
-
-        <div class="thinking-about">
-          <h3>I'm usually thinking about</h3>
-          <ul>
-            <li>
-              <span class="thinking-label">Art, museums, and experiences that stay with me</span>
-              <span class="thinking-detail">Museo Soumaya in Mexico City. Rothko rooms. Anything that makes a room feel like it's holding its breath.</span>
-            </li>
-            <li>
-              <span class="thinking-label">Places and timelines</span>
-              <span class="thinking-detail">Mexico City, Tokyo, Istanbul. The way a city can feel like a version of yourself you haven't met yet.</span>
-            </li>
-            <li>
-              <span class="thinking-label">Dashboards, decisions, and behavior</span>
-              <span class="thinking-detail">The gap between what data says and what people actually do.</span>
-            </li>
-            <li>
-              <span class="thinking-label">How to build a life that feels bigger than work</span>
-            </li>
-            <li>
-              <span class="thinking-label">Colonialism, cultural memory, and who gets preserved</span>
-              <span class="thinking-detail">Reading: <em>Orientalism</em> by Edward Said. Who decides what gets remembered.</span>
-            </li>
-            <li>
-              <span class="thinking-label">Yoshitomo Nara</span>
-              <span class="thinking-detail">The angry girls, the soft rebellion. Art that looks simple but holds something heavy.</span>
-            </li>
-            <li>
-              <span class="thinking-label">Cats</span>
-              <span class="thinking-detail">Always cats.</span>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="mobile-footer">
-        <div class="sidebar-links">
-          <a href="https://linkedin.com/in/yuemengchen" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://github.com/yuemengchen" target="_blank" rel="noopener">GitHub</a>
+      <footer class="page-end">
+        <p>More things in progress. <a href="about.html">A little about me →</a></p>
+        <div class="sidebar-links mobile-only-links">
+          <a href="https://www.linkedin.com/in/cyuemeng/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/yuemengchen" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="mailto:yuemengchen@gmail.com">Email</a>
         </div>
-      </div>
+      </footer>
     </main>
   </div>
-  <script>
-    document.querySelectorAll('.thinking-label').forEach(function(label) {
-      label.addEventListener('click', function(e) {
-        var detail = this.nextElementSibling;
-        if (!detail || !detail.classList.contains('thinking-detail')) return;
-        var wasVisible = detail.classList.contains('visible');
-        document.querySelectorAll('.thinking-detail.visible').forEach(function(d) {
-          d.classList.remove('visible');
-        });
-        if (!wasVisible) detail.classList.add('visible');
-      });
-    });
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.thinking-about li')) {
-        document.querySelectorAll('.thinking-detail.visible').forEach(function(d) {
-          d.classList.remove('visible');
-        });
-      }
-    });
-  </script>
 </body>
 </html>

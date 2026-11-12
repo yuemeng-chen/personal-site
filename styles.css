@@ -417,3 +417,52 @@ a:hover {
     display: none;
   }
 }
+
+/* Projects-first portfolio refresh */
+:root { --bg: #faf8f5; --ink: #2c2c2c; }
+.site-name span { color: #9e4a5a; }
+.eyebrow { color: var(--accent) !important; font-size: .72rem !important; text-transform: uppercase; letter-spacing: .16em; font-weight: 500; margin-bottom: 18px; }
+.project-hero { margin-bottom: 45px; }
+.project-hero h1, .about-page .hero h1 { font-size: clamp(2.4rem, 5vw, 3.7rem); font-weight: 400; line-height: 1.06; letter-spacing: -.018em; margin-bottom: 22px; }
+.project-hero .hero-intro { color: var(--text-secondary); font-size: .94rem; line-height: 1.9; max-width: 490px; }
+.projects-content { max-width: 660px; }
+.featured-project { border-top: 1px solid var(--border); padding: 31px 0 39px; }
+.project-art { height: 240px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; padding: 22px 28px; margin-bottom: 22px; }
+.art-kicker, .art-foot { font-family: var(--font-sans); font-size: .66rem; letter-spacing: .15em; text-transform: uppercase; }
+.art-burn { background: #b42b52; color: #fff0ee; transform: translateZ(0); }
+.art-burn:before { content: ''; position: absolute; border: 1px solid rgba(255,255,255,.24); inset: 11px; pointer-events: none; }
+.burn-title { font-family: var(--font-serif); font-size: clamp(3.4rem, 9vw, 5.5rem); font-style: italic; line-height: .72; letter-spacing: -.055em; margin: auto 0; transform: rotate(-4deg); text-align: center; text-shadow: 2px 3px 0 rgba(70,0,20,.19); }
+.art-sticker { position: absolute; right: 30px; bottom: 23px; border: 1px solid #ffe3e5; border-radius: 100%; transform: rotate(12deg); padding: 8px 13px; font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; }
+.art-rip { background: #33392f; color: #e5e2cb; align-items: center; text-align: center; }
+.art-rip .art-kicker { align-self: flex-start; }
+.rip-symbol { position: absolute; font-size: 9rem; color: rgba(229,226,203,.1); line-height: 1; top: 42px; }
+.rip-title { position: relative; font-family: var(--font-serif); font-size: 5rem; line-height: .73; font-weight: 300; font-style: italic; }
+.art-rip .art-foot { align-self: flex-end; }
+.art-heart { background: #e6d5d3; color: #853c49; align-items: center; }
+.art-heart .art-kicker { align-self: flex-start; }
+.heart-symbol { font-family: var(--font-serif); font-size: 10rem; font-weight: 300; line-height: 1; margin: auto; transform: rotate(-9deg); }
+.art-heart .art-foot { align-self: flex-end; }
+.project-meta { display: flex; justify-content: space-between; gap: 14px; color: var(--text-secondary); font-size: .72rem; letter-spacing: .045em; margin-bottom: 9px; }
+.project-copy h2 { font-family: var(--font-serif); font-size: 1.8rem; line-height: 1.2; font-weight: 400; margin: 0 0 14px; }
+.project-copy h2 a { border: 0; }
+.project-copy h2 span { color: var(--accent); font-family: var(--font-sans); font-size: .94rem; vertical-align: 5px; margin-left: 5px; }
+.project-copy p { color: var(--text-secondary); line-height: 1.84; font-size: .91rem; margin-bottom: 12px; }
+.project-copy .project-aside { color: #595453; font-style: italic; }
+.page-end { border-top: 1px solid var(--border); padding: 24px 0 0; margin-top: 5px; color: var(--text-secondary); font-size: .83rem; }
+.page-end a { border-color: #c6b9b7; }
+.mobile-only-links { display: none; }
+.about-page .about-content { font-size: 1rem; }
+.about-page .hero { margin-bottom: 38px; }
+.about-page .thinking-about { margin-top: 48px; }
+.interests-list li { padding: 13px 0; }
+.interest-label { display: block; color: var(--text); font-size: .94rem; }
+.interest-note { display: block; color: var(--text-secondary); font-size: .82rem; padding-top: 3px; }
+@media (max-width: 768px) {
+  .project-art { height: 215px; padding: 18px 19px; }
+  .burn-title { font-size: clamp(3.3rem, 14vw, 5rem); }
+  .rip-title { font-size: 4.3rem; }
+  .nav-links a { font-size: .91rem; }
+  .mobile-only-links { display: flex; margin-top: 30px; }
+  .main-content { padding-top: 43px; }
+}
+@media (prefers-reduced-motion: reduce) { a { transition: none; } }
